@@ -1,4 +1,4 @@
-homeRegion: &HOME_REGION us-east-1
+homeRegion: &HOME_REGION ca-central-1
 enabledRegions:
   - *HOME_REGION
 managementAccountAccessRole: AWSControlTowerExecution
@@ -19,7 +19,7 @@ snsTopics:
   topics:
     - name: Security
       emailAddresses:
-        - <security-notifications>@example.com  <----- UPDATE EMAIL ADDRESS
+        - prsngpt+lzabasic-security-notifications@amazon.com
 controlTower:
   enable: true
   landingZone:
@@ -155,31 +155,31 @@ reports:
           threshold: 100
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-notifications>@example.com  <----- UPDATE EMAIL ADDRESS
+          address: prsngpt+lzabasic-budget-notifications@amazon.com
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 90
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-notifications>@example.com  <----- UPDATE EMAIL ADDRESS
+          address: prsngpt+lzabasic-budget-notifications@amazon.com
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 80
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-notifications>@example.com  <----- UPDATE EMAIL ADDRESS
+          address: prsngpt+lzabasic-budget-notifications@amazon.com
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 75
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-notifications>@example.com  <----- UPDATE EMAIL ADDRESS
+          address: prsngpt+lzabasic-budget-notifications@amazon.com
         - type: ACTUAL
           thresholdType: PERCENTAGE
           threshold: 50
           comparisonOperator: GREATER_THAN
           subscriptionType: EMAIL
-          address: <budget-notifications>@example.com  <----- UPDATE EMAIL ADDRESS
+          address: prsngpt+lzabasic-budget-notifications@amazon.com
 backup:
   vaults:
     - name: BackupVault
